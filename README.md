@@ -62,6 +62,16 @@ After first use, two files appear in your repo (commit them so the team shares t
 └── component-mapping.md     # design feature → component rules (learned from your edits)
 ```
 
+## 离线参考手册（HTML）
+
+`docs/index.html` 是一份独立的可视化参考文档，本地 clone 后用浏览器打开就能浏览整个 skill 的设计：6 步流程、匹配优先级、schema、跨项目启发式等。
+
+```bash
+open ~/.comate/skills/design-to-code-reuse/docs/index.html   # macOS
+```
+
+> 仅供阅读 — 运行时 AI 只加载 `SKILL.md` 和 `references/*.md`，不会读这个 HTML。
+
 ## Layout
 
 ```
@@ -75,6 +85,8 @@ design-to-code-reuse/
 ├── scripts/
 │   ├── scan_components.py         # scans src/components, exports props
 │   └── match_report.py            # renders the confirmation table
+├── docs/
+│   └── index.html                 # offline visual reference (read-only)
 └── assets/
 ```
 
